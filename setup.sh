@@ -17,10 +17,10 @@ echo "Installing pillow library:"
 pip3 install pillow --upgrade --break-system-packages
 
 echo "Installing inky impression libraries:"
-pip3 install inky[rpi,example-depends]
+pip3 install inky[rpi,example-depends] --break-system-packages
 
 echo "Remove numpy:"
-pip3 uninstall numpy
+pip3 uninstall numpy 
 
 echo "Enter your Spotify Client ID:"
 read spotify_client_id

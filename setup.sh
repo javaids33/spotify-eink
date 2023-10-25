@@ -20,7 +20,7 @@ echo "Installing inky impression libraries:"
 pip3 install inky[rpi,example-depends] --break-system-packages
 
 echo "Remove numpy:"
-pip3 uninstall numpy 
+pip3 uninstall numpy --break-system-packages
 
 echo "Enter your Spotify Client ID:"
 read spotify_client_id

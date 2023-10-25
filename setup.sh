@@ -31,7 +31,8 @@ read spotify_client_secret
 export SPOTIPY_CLIENT_SECRET=$spotify_client_secret
 
 echo "Enter your Spotify Redirect URI:" 
-export SPOTIPY_REDIRECT_URI="http://localhost/redirect"
+read spotify_redirect_uri
+export SPOTIPY_REDIRECT_URI=$spotify_redirect_uri
 
 echo "Enter your spotify username:"
 read spotify_username

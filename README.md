@@ -13,7 +13,8 @@ sudo raspi-config
 
 * Download the install script
 ```
-wget https://raw.githubusercontent.com/ryanwa18/spotipi-eink/main/setup.sh
+wget https://raw.githubusercontent.com/javaids33/spotify-eink/setup/setup.sh
+
 chmod +x setup.sh
 ```
 
@@ -23,6 +24,6 @@ sudo bash setup.sh
 ```
 
 
-ssh raspberrypi.local -l pi 
+ssh raspberrypi.local -l syed 
 
 ssh-keygen -R raspberrypi.local

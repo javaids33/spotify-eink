@@ -3,7 +3,7 @@ echo "Ensure packages are installed:"
 sudo apt-get install python3-numpy git firefox-esr
 
 echo "Clone repositories:"
-git clone https://github.com/ryanwa18/spotipi-eink
+git clone https://github.com/javaids33/spotify-eink
 cd spotipi-eink
 git clone https://github.com/pimoroni/inky
 
@@ -11,10 +11,10 @@ echo "Add font to system:"
 sudo cp ./fonts/CircularStd-Bold.otf /usr/share/fonts/opentype/CircularStd-Bold/CircularStd-Bold.otf
 
 echo "Installing spotipy library:"
-pip install spotipy --upgrade
+pip3 install spotipy --upgrade --break-system-packages
 
 echo "Installing pillow library:"
-pip install pillow --upgrade
+pip3 install pillow --upgrade --break-system-packages
 
 echo "Installing inky impression libraries:"
 pip3 install inky[rpi,example-depends]
@@ -30,9 +30,8 @@ echo "Enter your Spotify Client Secret:"
 read spotify_client_secret
 export SPOTIPY_CLIENT_SECRET=$spotify_client_secret
 
-echo "Enter your Spotify Redirect URI:"
-read spotify_redirect_uri
-export SPOTIPY_REDIRECT_URI=$spotify_redirect_uri
+echo "Enter your Spotify Redirect URI:" 
+export SPOTIPY_REDIRECT_URI=http://localhost/redirect
 
 echo "Enter your spotify username:"
 read spotify_username

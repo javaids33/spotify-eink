@@ -4,7 +4,7 @@ sudo apt-get install python3-numpy git firefox-esr
 
 echo "Clone repositories:"
 git clone https://github.com/javaids33/spotify-eink
-cd spotipi-eink
+cd spotify-eink
 sudo chmod -rwx spotify-eink
 git clone https://github.com/pimoroni/inky
 

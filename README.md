@@ -26,4 +26,8 @@ sudo bash setup.sh
 
 ssh raspberrypi.local -l syed 
 
+cd spotipi-eink
+
 ssh-keygen -R raspberrypi.local
+
+/home/syed/spotipi-eink/python/.cache
